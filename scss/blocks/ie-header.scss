@@ -1,0 +1,79 @@
+.ie-header {
+  padding: 25px 30px;
+  font-family: "PtrootUI", sans-serif;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -20px;
+  }
+  &__col {
+    padding-left: 20px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+  }
+  &__list {
+    display: flex;
+    font-size: 28px;
+    line-height: 30px;
+    margin-left: -20px;
+    li {
+      margin-left: 20px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+    }
+    a {
+      display: block;
+      padding: 2px 30px 4px;
+      text-decoration: none;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 91px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 91px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        transition: 0.3s;
+      }
+      span {
+        display: block;
+        position: relative;
+        z-index: 3;
+        transition: 0.3s;
+      }
+      &:hover {
+        &:after {
+          transform: translate(0,-3px);
+        }
+        span {
+          transform: translate(0,-3px);
+        }
+      }
+    }
+  }
+  &__search {
+    margin-left: 40px;
+    transition: 0.3s;
+    &:hover {
+      transform: translate(0,-3px);
+    }
+  }
+}

@@ -8,39 +8,50 @@
 		<meta name="description" content="">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class="ie-body">
 		<div class="page">
-			<!-- header-->
-			<header class="header" id="header">
-				<div class="wrapper">
-					<div class="header_container">
-						<!-- menu-->
-						<div class="js-menu menu menu--right">
-							<div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
-								<div class="hamburger-box">
-									<div class="hamburger-inner"></div>
+			<!-- ie-header-->
+			<header class="ie-header">
+				<div class="wrapper-grid">
+					<div class="ie-header__row">
+						<div class="ie-header__col"> <a class="ie-header__logo" href="#"><img src="img/logo.svg" alt=""></a></div>
+						<div class="ie-header__col"> 
+							<!-- ie-menu-->
+							<div class="js-ie-menu ie-menu ie-menu--right">
+								<div class="ie-menu__btn hamburger hamburger--squeeze" id="ie-menu-btn">
+									<div class="hamburger-box">
+										<div class="hamburger-inner"></div>
+									</div>
 								</div>
+								<nav class="ie-menu__nav">
+									<ul class="ie-menu__list">
+										<li><a href="tel:+78003501010">+7 800 350-10-10</a></li>
+										<li><a href="#">о корпорации</a></li>
+										<li><a href="#">пресс-служба</a></li>
+										<li><a href="#">контакты</a></li>
+										<li><a href="#">обратная связь</a></li>
+									</ul>
+									<div class="ie-menu__close" id="ie-menu-close"></div>
+								</nav>
+								<div class="ie-menu__over" id="ie-menu-over"></div>
 							</div>
-							<nav class="menu__nav">
-								<ul class="menu__list">
-									<li><a href="#">Меню 1</a></li>
-									<li><a href="#">Меню 2</a></li>
-									<li><a href="#">Меню 3</a></li>
-									<li><a href="#">Меню 4</a></li>
-									<li><a href="#">Меню 5</a></li>
-									<li><a href="#">Меню 6</a></li>
-									<li><a href="#">Меню 7</a></li>
-									<li><a href="#">Меню 8</a></li>
-								</ul>
-								<div class="menu__close" id="menu-close"></div>
-							</nav>
-							<div class="menu__over" id="menu-over"></div>
+							<!-- /ie-menu-->
+							<div class="ie-header__bottom">
+								<ul class="ie-header__list"> 
+									<li><a href="#"> <span>бизнесу</span></a></li>
+									<li><a href="#"> <span>банкам</span></a></li>
+									<li><a href="#"> <span>регионам</span></a></li>
+								</ul><a class="ie-header__search" href="#">
+									<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.66 28.32C22.2042 28.32 28.32 22.2042 28.32 14.66C28.32 7.11579 22.2042 1 14.66 1C7.11579 1 1 7.11579 1 14.66C1 22.2042 7.11579 28.32 14.66 28.32Z" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"></path>
+										<path d="M25.5898 24.2L31.7398 30.36" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"></path>
+									</svg></a>
+							</div>
 						</div>
-						<!-- /menu-->
 					</div>
 				</div>
 			</header>
-			<!-- /header-->
+			<!-- /ie-header-->
 			<div class="content">
 				<div class="wrapper">
 					<!-- video-bg-->
@@ -201,13 +212,11 @@
 					<!-- /google-map-->
 				</div>
 			</div>
-			<!-- footer-->
-			<footer class="footer"> 
-				<div class="wrapper"> 
-					<div class="licence">Футер</div>
-				</div>
+			<!-- ie-footer-->
+			<footer class="ie-footer"> 
+				<div class="wrapper"> </div>
 			</footer>
-			<!-- /footer-->
+			<!-- /ie-footer-->
 		</div>
 		<script src="js/libs/jquery.min.js"></script>
 		<script src="js/scripts.js"></script>

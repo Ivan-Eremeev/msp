@@ -1,0 +1,60 @@
+.ie-body {
+  background-color: #191919;
+}
+
+.ie-menu__list a {
+  color: #E6D6C7;
+}
+.ie-menu__list a:after {
+  background-color: #E6D6C7;
+}
+
+.ie-header__list a {
+  color: #191919;
+}
+.ie-header__list a:before {
+  background-color: #E6D6C7;
+}
+.ie-header__list a:after {
+  background-color: #E6D6C7;
+  border: 2px solid #191919;
+}
+
+.ie-title {
+  color: #E6D6C7;
+}
+
+.ie-slider__item {
+  color: #191919;
+}
+.ie-slider__item--1 {
+  background-color: #E6D6C7;
+}
+.ie-slider__item--2 {
+  background-color: #006EF3;
+}
+.ie-slider__item--3 {
+  background-color: #FF6766;
+}
+.ie-slider__item--4 {
+  background-color: #006EF3;
+}
+.ie-slider__item--5 {
+  background-color: #006EF3;
+}
+.ie-slider__list li {
+  border: 2px solid #191919;
+}
+.ie-slider__sticker {
+  background-color: #006EF3;
+  color: #E6D6C7;
+}
+.ie-slider .swiper-pagination-bullet {
+  border: 1.5px solid #E6D6C7;
+}
+.ie-slider .swiper-pagination-bullet-active {
+  background-color: #E6D6C7;
+}
+.ie-slider__toggle {
+  color: #E6D6C7;
+}

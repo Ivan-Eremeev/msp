@@ -7,7 +7,7 @@
 
 // * Настройки *
 const preprocessor = 'scss', // Выбрать препроцессор для стилей (scss или less)
-  jsOn = true, // Нужно ли собирать js (инклюды файлов)
+  jsOn = false, // Нужно ли собирать js (инклюды файлов)
   html = false; // Нужно ли делать перезагрузку браузера при изменении html файлов (если не используется pug)
 
 // * Пути к папкам относительно корня проекта *
@@ -52,7 +52,7 @@ gulp.task('pug', function () {
 
 if (preprocessor == 'scss') {
   gulp.task('style', function () {
-    return gulp.src(scssPath + '/style.scss')
+    return gulp.src(scssPath + '/*.scss')
       .pipe(plumber())
       .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
       .pipe(autoprefixer({
@@ -65,7 +65,7 @@ if (preprocessor == 'scss') {
 
 else if (preprocessor == 'less') {
   gulp.task('style', function () {
-    return gulp.src(lessPath + '/style.less')
+    return gulp.src(lessPath + '/*.less')
       .pipe(plumber())
       .pipe(less())
       .pipe(autoprefixer({

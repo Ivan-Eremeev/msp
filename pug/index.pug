@@ -1,0 +1,111 @@
+extends blocks/base.pug
+
+block title 
+	title Главная
+
+block style-libs
+	link(rel="stylesheet", href="css/from-site/reset.css")
+	link(rel="stylesheet", href="css/from-site/template_styles.css")
+	link(rel="stylesheet", href="css/from-site/menu-footer.css")
+
+	link(rel="stylesheet", href="css/libs/swiper-bundle.min.css")
+	link(rel="stylesheet", href="css/dark-theme.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.ie-page
+
+		include blocks/header.pug
+		
+		.ie-content
+			.wrapper-grid
+
+				// ie-slider
+				.ie-slider
+					h1.ie-title Корпорация МСП: поддерживаем бизнес России
+					#ieSlider.ie-slider__slider 
+						.swiper-wrapper
+							.swiper-slide.swiper-slide--1
+								a(href="#").ie-slider__item.ie-slider__item--1
+									.ie-slider__title финансовая поддержка
+									.ie-slider__img 
+										img(src="img/smile_1.png", alt="")
+							.swiper-slide.swiper-slide--2
+								a(href="#").ie-slider__item.ie-slider__item--2
+									.ie-slider__img
+										img(src="img/servise360.png", alt="")
+							.swiper-slide.swiper-slide--3
+								a(href="#").ie-slider__item.ie-slider__item--3
+									.ie-slider__title полки
+									.ie-slider__img 
+										img(src="img/hands.png", alt="")
+									//- img(src="img/slider_3.jpg", alt="")
+							.swiper-slide.swiper-slide--1
+								a(href="#").ie-slider__item.ie-slider__item--1
+									.ie-slider__title обучение
+									.ie-slider__text образовательные мероприятия по востребованным навыкам
+									ul.ie-slider__list
+										li маркетинг
+										li продажи
+										li найм сотрудников
+										li критическое мышление
+									.ie-slider__sticker выбрать мероприятие &#8599;
+									.ie-slider__ps получите знания по теме бесплатно и примените их в работе
+							.swiper-slide.swiper-slide--4
+								a(href="#").ie-slider__item.ie-slider__item--4
+									.ie-slider__title поставки 
+							.swiper-slide.swiper-slide--5
+								a(href="#").ie-slider__item.ie-slider__item--5
+									.ie-slider__img 
+										img(src="img/hands_2.png", alt="")
+									.ie-slider__title закупки
+							.swiper-slide.swiper-slide--1
+								a(href="#").ie-slider__item.ie-slider__item--1
+									.ie-slider__title финансовая поддержка
+									.ie-slider__img 
+										img(src="img/smile_1.png", alt="")
+							.swiper-slide.swiper-slide--2
+								a(href="#").ie-slider__item.ie-slider__item--2
+									.ie-slider__img
+										img(src="img/servise360.png", alt="")
+					.ie-slider__bottom 
+						.ie-slider__toggle 
+							svg(width="53" height="30" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(d="M30.717 29L51.5 29L51.5 11.2348L30.717 11.2348L30.717 29Z" fill="#191919" stroke="#E6D6C7" stroke-width="2")
+								path(d="M30.2119 10.2348L30.2119 30L-0.000354767 30L-0.000355631 10.2348L30.2119 10.2348Z" fill="#E6D6C7")
+								path(d="M3.74971 3.61941L3.74971 22.4199L12.1136 29L30.1445 29L30.1445 11.1871L9.88679 1.09743L3.74971 3.61941Z" fill="#191919" stroke="#E6D6C7" stroke-width="2")
+								path(d="M3.43136 22.2734L10.0361 19.3498L10.0361 0.670286" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10")
+								path(d="M10.0365 19.3506L30.2119 28.959" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10")
+							span перейти на светлую сторону
+						.swiper-pagination
+				//	/ie-slider
+			
+		include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	script(src="js/libs/swiper-bundle.min.js") 
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

@@ -32,9 +32,9 @@ $(document).ready(function () {
 		if (menu.length) {
 			menu.each(function () {
 				var $this = $(this),
-						menuBtn = $this.find('#menu-btn'),
-						over = $this.find('#menu-over'),
-						close = $this.find('#menu-close'),
+						menuBtn = $this.find('#ie-menu-btn'),
+						over = $this.find('#ie-menu-over'),
+						close = $this.find('#ie-menu-close'),
 						body = $('body'),
 						scrollbarWidth;
 				menuBtn.on('click', toggleOpenMenu);
@@ -67,7 +67,16 @@ $(document).ready(function () {
 			})
 		};
 	};
-	myMenu($('.js-menu'));
+	myMenu($('.js-ie-menu'));
+
+	// Swiper ieSlider
+	const ieSlider = new Swiper('#ieSlider', {
+		slidesPerView: "auto",
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
 
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {
