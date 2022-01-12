@@ -187,6 +187,9 @@ $red: #FF6766;
     }
     a {
       color: $white;
+      &:hover {
+        color: $blue;
+      }
     }
   }
 }

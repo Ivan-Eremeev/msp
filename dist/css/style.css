@@ -1069,4 +1069,7 @@ img {
 .ie-footer__tels a {
   white-space: nowrap;
   text-decoration: none;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }

@@ -158,3 +158,6 @@
 .ie-footer__tels a {
   color: #E6D6C7;
 }
+.ie-footer__tels a:hover {
+  color: #006EF3;
+}
