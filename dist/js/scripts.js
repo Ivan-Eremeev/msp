@@ -73,10 +73,26 @@ $(document).ready(function () {
 	const ieSlider = new Swiper('#ieSlider', {
 		slidesPerView: "auto",
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.ie-slider__pagination',
 			clickable: true,
 		},
 	});
+
+	// Swiper ieSlider2
+	const ieSlider2 = new Swiper('#ieSlider2', {
+		slidesPerView: "auto",
+	});
+
+	// $('.ie-slider__slider .swiper-slide').animate({ textIndent: 0 }, {
+	// 	step: function (go) {
+	// 		$(this).css('-moz-transform', 'rotate(' + go + 'deg)');
+	// 		$(this).css('-webkit-transform', 'rotate(' + go + 'deg)');
+	// 		$(this).css('-o-transform', 'rotate(' + go + 'deg)');
+	// 		$(this).css('transform', 'rotate(' + go + 'deg)');
+	// 	},
+	// 	duration: 500,
+	// 	complete: function () {}
+	// });
 
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {
@@ -668,34 +684,34 @@ $(document).ready(function () {
 	// }
 	// hideListItems();
 
-	// // Выпадайки при клике по кнопке
-	// // Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
-	// // Задать кнопкам .js-drop-btn и data-drop="" с айдишником блока выпадайки
-	// function dropBlock(btn) {
-	// 	var $this = undefined,
-	// 			drop = undefined,
-	// 			close = $('.js-drop-close');
-	// 	btn.on('click', function () {
-	// 		$this = $(this);
-	// 		drop = $('#' + $this.data('drop'));
-	// 		$this.toggleClass('is-active');
-	// 		drop.toggleClass('open');
-	// 		$(document).mouseup(function (e) {
-	// 			if (!$this.is(e.target)
-	// 				&& $this.has(e.target).length === 0
-	// 				&& !drop.is(e.target)
-	// 				&& drop.has(e.target).length === 0) {
-	// 				$this.removeClass('is-active');
-	// 				drop.removeClass('open');
-	// 			}
-	// 		});
-	// 	})
-	// 	close.on('click', function () {
-	// 		$('[data-drop="' + $(this).data('drop') +'"]').removeClass('is-active');
-	// 		$('#' + $(this).data('drop')).removeClass('open');
-	// 	})
-	// }
-	// dropBlock($('.js-drop-btn'));
+	// Выпадайки при клике по кнопке
+	// Задать блокам выпадайкам айдишник совпадающий с data-drop="" в кнопке для этого блока
+	// Задать кнопкам .js-drop-btn и data-drop="" с айдишником блока выпадайки
+	function dropBlock(btn) {
+		var $this = undefined,
+				drop = undefined,
+				close = $('.js-drop-close');
+		btn.on('click', function () {
+			$this = $(this);
+			drop = $('#' + $this.data('drop'));
+			$this.toggleClass('is-active');
+			drop.toggleClass('open');
+			$(document).mouseup(function (e) {
+				if (!$this.is(e.target)
+					&& $this.has(e.target).length === 0
+					&& !drop.is(e.target)
+					&& drop.has(e.target).length === 0) {
+					$this.removeClass('is-active');
+					drop.removeClass('open');
+				}
+			});
+		})
+		close.on('click', function () {
+			$('[data-drop="' + $(this).data('drop') +'"]').removeClass('is-active');
+			$('#' + $(this).data('drop')).removeClass('open');
+		})
+	}
+	dropBlock($('.js-drop-btn'));
 
 	// // JQuery Slider // Ползунок
 	// function JQuerySlider() {

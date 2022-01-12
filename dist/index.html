@@ -58,58 +58,121 @@
 			</header>
 			<!-- /ie-header-->
 			<div class="ie-content">
-				<div class="wrapper-grid">
-					<!-- ie-slider-->
-					<div class="ie-slider">
-						<h1 class="ie-title">Корпорация МСП: поддерживаем бизнес России</h1>
-						<div class="ie-slider__slider" id="ieSlider"> 
-							<div class="swiper-wrapper">
-								<div class="swiper-slide swiper-slide--1"><a class="ie-slider__item ie-slider__item--1" href="#">
-										<div class="ie-slider__title">финансовая поддержка</div>
-										<div class="ie-slider__img"> <img src="img/smile_1.png" alt=""></div></a></div>
-								<div class="swiper-slide swiper-slide--2"><a class="ie-slider__item ie-slider__item--2" href="#">
-										<div class="ie-slider__img"><img src="img/servise360.png" alt=""></div></a></div>
-								<div class="swiper-slide swiper-slide--3"><a class="ie-slider__item ie-slider__item--3" href="#">
-										<div class="ie-slider__title">полки</div>
-										<div class="ie-slider__img"> <img src="img/hands.png" alt=""></div></a></div>
-								<div class="swiper-slide swiper-slide--1"><a class="ie-slider__item ie-slider__item--1" href="#">
-										<div class="ie-slider__title">обучение</div>
-										<div class="ie-slider__text">образовательные мероприятия по востребованным навыкам</div>
-										<ul class="ie-slider__list">
-											<li>маркетинг</li>
-											<li>продажи</li>
-											<li>найм сотрудников</li>
-											<li>критическое мышление</li>
-										</ul>
-										<div class="ie-slider__sticker">выбрать мероприятие &#8599;</div>
-										<div class="ie-slider__ps">получите знания по теме бесплатно и примените их в работе</div></a></div>
-								<div class="swiper-slide swiper-slide--4"><a class="ie-slider__item ie-slider__item--4" href="#">
-										<div class="ie-slider__title">поставки </div></a></div>
-								<div class="swiper-slide swiper-slide--5"><a class="ie-slider__item ie-slider__item--5" href="#">
-										<div class="ie-slider__img"> <img src="img/hands_2.png" alt=""></div>
-										<div class="ie-slider__title">закупки</div></a></div>
-								<div class="swiper-slide swiper-slide--1"><a class="ie-slider__item ie-slider__item--1" href="#">
-										<div class="ie-slider__title">финансовая поддержка</div>
-										<div class="ie-slider__img"> <img src="img/smile_1.png" alt=""></div></a></div>
-								<div class="swiper-slide swiper-slide--2"><a class="ie-slider__item ie-slider__item--2" href="#">
-										<div class="ie-slider__img"><img src="img/servise360.png" alt=""></div></a></div>
+				<!-- ie-slider-->
+				<div class="ie-slider">
+					<h1 class="ie-title">Корпорация МСП: поддерживаем бизнес России</h1>
+					<div class="ie-slider__slider" id="ieSlider"> 
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide--1"><a class="ie-slider__item ie-slider__item--1" href="#">
+									<div class="ie-slider__title">финансовая поддержка</div>
+									<div class="ie-slider__img"> <img src="img/smile_1.png" alt=""></div></a></div>
+							<div class="swiper-slide swiper-slide--2">
+								<div class="ie-slider__item ie-slider__item--2 js-drop-btn" data-drop="hint">
+									<div class="ie-slider__img"><img src="img/servise360.png" alt=""></div>
+								</div>
+								<div class="ie-slider__drop" id="hint"> 
+									<div class="ie-slider__backing">Привет! Рассказать подробнее о Сервисе 360°?</div>
+									<div class="ie-slider__btns"> <a class="ie-slider__btn" href="#">конечно! &#8599;</a>
+										<div class="js-drop-close ie-slider__btn" data-drop="hint">посмотрю позже &#8599;</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="ie-slider__bottom"> 
-							<div class="ie-slider__toggle"> 
-								<svg width="53" height="30" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M30.717 29L51.5 29L51.5 11.2348L30.717 11.2348L30.717 29Z" fill="#191919" stroke="#E6D6C7" stroke-width="2"></path>
-									<path d="M30.2119 10.2348L30.2119 30L-0.000354767 30L-0.000355631 10.2348L30.2119 10.2348Z" fill="#E6D6C7"></path>
-									<path d="M3.74971 3.61941L3.74971 22.4199L12.1136 29L30.1445 29L30.1445 11.1871L9.88679 1.09743L3.74971 3.61941Z" fill="#191919" stroke="#E6D6C7" stroke-width="2"></path>
-									<path d="M3.43136 22.2734L10.0361 19.3498L10.0361 0.670286" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10"></path>
-									<path d="M10.0365 19.3506L30.2119 28.959" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10"></path>
-								</svg><span>перейти на светлую сторону</span>
-							</div>
-							<div class="swiper-pagination"></div>
+							<div class="swiper-slide swiper-slide--3"><a class="ie-slider__item ie-slider__item--3" href="#">
+									<div class="ie-slider__title">полки</div>
+									<div class="ie-slider__img"> <img src="img/hands.png" alt=""></div></a></div>
+							<div class="swiper-slide swiper-slide--1"><a class="ie-slider__item ie-slider__item--1" href="#">
+									<div class="ie-slider__title">обучение</div>
+									<div class="ie-slider__text">образовательные мероприятия по востребованным навыкам</div>
+									<ul class="ie-slider__list">
+										<li>маркетинг</li>
+										<li>продажи</li>
+										<li>найм сотрудников</li>
+										<li>критическое мышление</li>
+									</ul>
+									<div class="ie-slider__sticker">выбрать мероприятие &#8599;</div>
+									<div class="ie-slider__ps">получите знания по теме бесплатно и примените их в работе</div></a></div>
+							<div class="swiper-slide swiper-slide--3"><a class="ie-slider__item ie-slider__item--4" href="#">
+									<div class="ie-slider__title">поставки </div></a></div>
+							<div class="swiper-slide swiper-slide--3"><a class="ie-slider__item ie-slider__item--5" href="#">
+									<div class="ie-slider__img"> <img src="img/hands_2.png" alt=""></div>
+									<div class="ie-slider__title">закупки</div></a></div>
+							<div class="swiper-slide swiper-slide--1"><a class="ie-slider__item ie-slider__item--1" href="#">
+									<div class="ie-slider__title">финансовая поддержка</div>
+									<div class="ie-slider__img"> <img src="img/smile_1.png" alt=""></div></a></div>
+							<div class="swiper-slide swiper-slide--2"><a class="ie-slider__item ie-slider__item--2" href="#">
+									<div class="ie-slider__img"><img src="img/servise360.png" alt=""></div></a></div>
 						</div>
 					</div>
-					<!--	/ie-slider-->
+					<div class="ie-slider__bottom"> 
+						<div class="ie-slider__toggle"> 
+							<svg width="53" height="30" viewBox="0 0 53 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M30.717 29L51.5 29L51.5 11.2348L30.717 11.2348L30.717 29Z" fill="#191919" stroke="#E6D6C7" stroke-width="2"></path>
+								<path d="M30.2119 10.2348L30.2119 30L-0.000354767 30L-0.000355631 10.2348L30.2119 10.2348Z" fill="#E6D6C7"></path>
+								<path d="M3.74971 3.61941L3.74971 22.4199L12.1136 29L30.1445 29L30.1445 11.1871L9.88679 1.09743L3.74971 3.61941Z" fill="#191919" stroke="#E6D6C7" stroke-width="2"></path>
+								<path d="M3.43136 22.2734L10.0361 19.3498L10.0361 0.670286" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10"></path>
+								<path d="M10.0365 19.3506L30.2119 28.959" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10"></path>
+							</svg><span>перейти на светлую сторону</span>
+						</div>
+						<div class="ie-slider__pagination swiper-pagination"></div>
+					</div>
 				</div>
+				<!--	/ie-slider-->
+				<!-- ie-slider-->
+				<div class="ie-slider ie-slider--2">
+					<h2 class="ie-subtitle">отраслевые программы поддержки</h2>
+					<div class="ie-slider__slider" id="ieSlider2"> 
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide--1"><a class="ie-slider__item ie-slider__item--2" href="#">
+									<div class="ie-slider__title">газели</div>
+									<div class="ie-slider__img"> <img src="img/gazelle.png" alt=""></div>
+									<div class="ie-slider__text">программа для быстрорастущих предприятий в сфере инноваций и высоких технологий</div></a></div>
+							<div class="swiper-slide swiper-slide--2">
+								<div class="ie-slider__item ie-slider__item--6">
+									<div class="ie-slider__text">предпринимательский</div>
+									<div class="ie-slider__title">экспертный совет</div>
+									<div class="ie-slider__img"><img src="img/experts.png" alt=""></div>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide--5"><a class="ie-slider__item ie-slider__item--7" href="#"></a><a class="ie-slider__item ie-slider__item--7" href="#"></a><a class="ie-slider__item ie-slider__item--7" href="#"></a></div>
+							<div class="swiper-slide swiper-slide--4"><a class="ie-slider__item ie-slider__item--8" href="#">
+									<div class="ie-slider__title">сельскохозяйст-венная кооперация</div></a></div>
+							<div class="swiper-slide swiper-slide--3"><a class="ie-slider__item ie-slider__item--4" href="#">
+									<div class="ie-slider__img"> </div></a></div>
+							<div class="swiper-slide swiper-slide--1"><a class="ie-slider__item ie-slider__item--1" href="#">
+									<div class="ie-slider__title">финансовая поддержка</div>
+									<div class="ie-slider__img"> <img src="img/smile_1.png" alt=""></div></a></div>
+							<div class="swiper-slide swiper-slide--2"><a class="ie-slider__item ie-slider__item--2" href="#">
+									<div class="ie-slider__img"><img src="img/servise360.png" alt=""></div></a></div>
+						</div>
+					</div>
+				</div>
+				<!--	/ie-slider-->
+				<!-- ie-news-->
+				<div class="ie-news">
+					<h2 class="ie-subtitle">новости</h2>
+					<div class="row-grid"> 
+						<div class="ie-news__col">
+							<div class="ie-news__item ie-news__item--1"><img class="ie-news__img" src="img/news.jpg" alt=""></div>
+						</div>
+						<div class="ie-news__col">
+							<div class="ie-news__item ie-news__item--2">
+								<div class="ie-news__date">16 декабря 2021</div>
+								<div class="ie-news__title">Корпорация МСП провела в Казани стратегическую сессию по вопросам господдержки бизнеса в Татарстане</div>
+								<div class="ie-news__text">15 — 16 декабря представители Корпорации МСП при поддержке Министерства экономики Республики Татарстан провели выездную стратегическую сессию. </div>
+							</div>
+						</div>
+						<div class="ie-news__col">
+							<div class="ie-news__item ie-news__item--3">
+								<div class="ie-news__hints"> 
+									<div class="ie-news__hint">Привет! Рассказать подробнее о Сервисе 360°?</div>
+									<div class="ie-news__hint">Привет! Рассказать подробнее о Сервисе 360°?</div>
+									<div class="ie-news__hint">Привет! Рассказать подробнее о Сервисе 360°?</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--	/ie-news-->
 			</div>
 			<!-- ie-footer-->
 			<footer class="ie-footer"> 

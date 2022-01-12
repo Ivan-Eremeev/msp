@@ -1,0 +1,58 @@
+.ie-news {
+  font-family: "PtrootUI", sans-serif;
+  line-height: 1.2;
+  .row-grid {
+    @include no-gutter();
+  }
+  &__col {
+    @include col(4);
+  }
+  &__item {
+    height: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+    &--2 {
+      padding: 40px 60px;
+    }
+    &--3 {
+      display: flex;
+      justify-content: center;
+      padding: 0 40px;
+      border-radius: 0;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__date {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 47px;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__hints {
+    max-width: 408px;
+  }
+  &__hint {
+    padding: 24px 15px 26px 33px;
+    border-radius: 60px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    &:last-child {
+      width: 80%;
+      padding: 14px 15px 16px 33px;
+      border-radius: 60px 60px 60px 0;
+    }
+  }
+}

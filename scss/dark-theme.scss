@@ -7,6 +7,7 @@ $red: #FF6766;
 .ie-body {
   background-color: $black;
 }
+
 .ie-menu {
   &__list {
     a {
@@ -37,6 +38,10 @@ $red: #FF6766;
   color: $white;
 }
 
+.ie-subtitle {
+  color: $white;
+}
+
 .ie-slider {
   &__item {
     color: $black;
@@ -55,6 +60,17 @@ $red: #FF6766;
     &--5 {
       background-color: $blue;
     }
+    &--6 {
+      background-color: $black;
+      color: $white;
+      border: 2px solid $white;
+    }
+    &--7 {
+      background-color: $white;
+    }
+    &--8 {
+      background-color: $red;
+    }
   }
   &__list {
     li {
@@ -67,11 +83,35 @@ $red: #FF6766;
   }
   .swiper-pagination-bullet {
     border: 1.5px solid $white;
+    background-color: $black;
   }
   .swiper-pagination-bullet-active {
     background-color: $white;
   }
   &__toggle {
     color: $white;
+  }
+  &__backing {
+    background-color: $white;
+  }
+  &__btn {
+    color: $white;
+    border: 2px solid $white;
+    background-color: $black;
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
+
+.ie-news {
+  &__item {
+    &--2 {
+      background-color: $blue;
+    }
+  }
+  &__hint {
+    background-color: $white;
   }
 }
