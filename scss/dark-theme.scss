@@ -107,11 +107,86 @@ $red: #FF6766;
 
 .ie-news {
   &__item {
+    color: $black;
     &--2 {
       background-color: $blue;
     }
   }
   &__hint {
     background-color: $white;
+  }
+}
+
+.ie-newscenter {
+  color: $white;
+  &__name {
+    color: $blue;
+    &:after {
+      background-color: $blue;
+    }
+  }
+  &__location {
+    color: #867A7A;
+  }
+  &__title {
+    a {
+      color: $white;
+    }
+  }
+  &__link {
+    color: $white;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__date {
+    color: #867A7A;
+  }
+  &__more {
+    a {
+      border: 2px solid $white;
+      color: $white;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}
+
+.ie-social {
+  &__link {
+    color: $white;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.ie-footer {
+  color: $white;
+  &__list {
+    a {
+      color: $white;
+      &:hover {
+        color: #867A7A;
+      }
+    }
+  }
+  &__sticker {
+    background-color: $blue;
+  }
+  &__text {
+    color: #9A9A9A;
+  }
+  &__tels {
+    li {
+      &:before {
+        background-color: $white;
+      }
+    }
+    a {
+      color: $white;
+    }
   }
 }

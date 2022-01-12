@@ -1,6 +1,7 @@
 .ie-news {
   font-family: "PtrootUI", sans-serif;
   line-height: 1.2;
+  margin-bottom: 60px;
   .row-grid {
     @include no-gutter();
   }
@@ -8,9 +9,11 @@
     @include col(4);
   }
   &__item {
+    display: block;
     height: 100%;
     border-radius: 40px;
     overflow: hidden;
+    text-decoration: none;
     &--2 {
       padding: 40px 60px;
     }
