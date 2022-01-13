@@ -1330,6 +1330,9 @@ img {
   .ie-slider__text {
     font-size: 18px;
   }
+  .ie-slider__item--1 {
+    padding: 20px 10px;
+  }
   .ie-slider__item--3 .ie-slider__img {
     width: 80%;
   }

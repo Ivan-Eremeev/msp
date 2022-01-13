@@ -285,6 +285,9 @@
       font-size: 18px;
     }
     &__item {
+      &--1 {
+        padding: 20px 10px;
+      }
       &--3 {
         .ie-slider__img {
           width: 80%;
