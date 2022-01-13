@@ -762,4 +762,20 @@ $(document).ready(function () {
 	}
 	replace($('#blockReplace'), $('#to'), $('#from'), breakSm);
 
+	// Переключение цвета тем
+	function switchTheme() {
+		var switchBtn = $('#switchTheme'),
+				body = $('body');
+		switchBtn.on('click', function () {
+			if (body.hasClass('dark-theme')) {
+				body.removeClass('dark-theme');
+				body.addClass('light-theme');
+			}else {
+				body.addClass('dark-theme');
+				body.removeClass('light-theme');
+			}
+		})
+	}
+	switchTheme();
+
 });

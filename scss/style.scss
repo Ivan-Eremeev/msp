@@ -25,6 +25,8 @@ $break_xs: 500px;
 
 // Подключение файлов
 @import 'blocks/settings';
+@import 'blocks/dark-theme';
+@import 'blocks/light-theme';
 @import 'hamburgers/hamburgers';
 @import 'blocks/ie-header';
 @import 'blocks/ie-menu';
