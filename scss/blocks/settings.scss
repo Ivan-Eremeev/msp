@@ -64,15 +64,32 @@ html {
   font-family: "PtrootUI", sans-serif;
   font-size: 83px;
   font-weight: normal;
-  line-height: 120px;
+  line-height: 1.5;
   text-align: center;
+  @media (max-width: $break_xl) {
+    font-size: 50px;
+  }
+  @media (max-width: $break_sm) {
+    font-size: 40px;
+  }
+  @media (max-width: $break_xs) {
+    font-size: 30px;
+  }
 }
 .ie-subtitle {
   padding: 0 30px;
   font-size: 40px;
   font-weight: normal;
-  line-height: 40px;
   margin-bottom: 30px;
+  @media (max-width: $break_xl) {
+    font-size: 30px;
+  }
+  @media (max-width: $break_sm) {
+    font-size: 20px;
+  }
+  @media (max-width: $break_xs) {
+    padding: 0 15px;
+  }
 }
 * {
   box-sizing: border-box;

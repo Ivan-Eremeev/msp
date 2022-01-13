@@ -22,7 +22,7 @@
 						<div class="ie-header__col"> <a class="ie-header__logo" href="#"><img src="img/logo.svg" alt=""></a></div>
 						<div class="ie-header__col"> 
 							<!-- ie-menu-->
-							<div class="js-ie-menu ie-menu ie-menu--right">
+							<div class="js-ie-menu ie-menu ie-menu--left">
 								<div class="ie-menu__btn hamburger hamburger--squeeze" id="ie-menu-btn">
 									<div class="hamburger-box">
 										<div class="hamburger-inner"></div>
@@ -36,21 +36,23 @@
 										<li><a href="#">контакты</a></li>
 										<li><a href="#">обратная связь</a></li>
 									</ul>
+									<div id="to"></div>
 									<div class="ie-menu__close" id="ie-menu-close"></div>
 								</nav>
-								<div class="ie-menu__over" id="ie-menu-over"></div>
 							</div>
 							<!-- /ie-menu-->
-							<div class="ie-header__bottom">
-								<ul class="ie-header__list"> 
-									<li><a href="#"> <span>бизнесу</span></a></li>
-									<li><a href="#"> <span>банкам</span></a></li>
-									<li><a href="#"> <span>регионам</span></a></li>
-								</ul><a class="ie-header__search" href="#">
-									<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M14.66 28.32C22.2042 28.32 28.32 22.2042 28.32 14.66C28.32 7.11579 22.2042 1 14.66 1C7.11579 1 1 7.11579 1 14.66C1 22.2042 7.11579 28.32 14.66 28.32Z" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"></path>
-										<path d="M25.5898 24.2L31.7398 30.36" stroke="#E6D6C7" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"></path>
-									</svg></a>
+							<div id="from">
+								<div class="ie-header__bottom" id="blockReplace">
+									<ul class="ie-header__list"> 
+										<li><a href="#"> <span>бизнесу</span></a></li>
+										<li><a href="#"> <span>банкам</span></a></li>
+										<li><a href="#"> <span>регионам</span></a></li>
+									</ul><a class="ie-header__search" href="#">
+										<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M14.66 28.32C22.2042 28.32 28.32 22.2042 28.32 14.66C28.32 7.11579 22.2042 1 14.66 1C7.11579 1 1 7.11579 1 14.66C1 22.2042 7.11579 28.32 14.66 28.32Z" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"></path>
+											<path d="M25.5898 24.2L31.7398 30.36" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"></path>
+										</svg></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -199,7 +201,7 @@
 			</div>
 			<!-- ie-footer-->
 			<footer class="ie-footer"> 
-				<div class="wrapper"> 
+				<div class="wrapper-grid">
 					<!-- ie-social-->
 					<div class="ie-social">
 						<div class="ie-social__row"><a class="ie-social__link" href="#">facebook<span>&#8599;</span></a><a class="ie-social__link" href="#">vkontakte<span>&#8599;</span></a><a class="ie-social__link" href="#">instagram<span>&#8599;</span></a><a class="ie-social__link" href="#">telegram<span>&#8599;</span></a></div>
@@ -300,19 +302,19 @@
 							<p>Спасибо за помощь!</p>
 						</div>
 					</div>
-				</div>
-				<div class="ie-footer__bottom"> 
-					<div class="row-grid">
-						<div class="ie-footer__col-1">
-							<div class="ie-footer__text">Акционерное общество «Федеральная корпорация по развитию малого и среднего предпринимательства» действует в соответствии с Гражданским кодексом Российской Федерации, Федеральным законом от 26.12.1995 № 208-ФЗ «Об акционерных обществах», Федеральным законом от 24.07.2007 № 209-ФЗ «О развитии малого и среднего предпринимательства в Российской Федерации», Указом Президента Российской Федерации от 05.06.2015 № 287 «О мерах по дальнейшему развитию малого и среднего предпринимательства», иными законодательными и нормативными правовыми актами Российской Федерации и Уставом.</div>
-							<div class="ie-footer__copyright">© 2014-2021 АО «Корпорация МСП»</div>
-						</div>
-						<div class="ie-footer__col-2">
-							<ul class="ie-footer__tels">
-								<li> <a href="tel:+78003501010">+7 800 350-10-10</a></li>
-								<li> <a href="#">+7 495 698-98-00</a></li>
-							</ul>
-							<p>Москва, Славянская площадь, д.4, стр.1</p>
+					<div class="ie-footer__bottom"> 
+						<div class="row-grid">
+							<div class="ie-footer__col-1">
+								<div class="ie-footer__text">Акционерное общество «Федеральная корпорация по развитию малого и среднего предпринимательства» действует в соответствии с Гражданским кодексом Российской Федерации, Федеральным законом от 26.12.1995 № 208-ФЗ «Об акционерных обществах», Федеральным законом от 24.07.2007 № 209-ФЗ «О развитии малого и среднего предпринимательства в Российской Федерации», Указом Президента Российской Федерации от 05.06.2015 № 287 «О мерах по дальнейшему развитию малого и среднего предпринимательства», иными законодательными и нормативными правовыми актами Российской Федерации и Уставом.</div>
+								<div class="ie-footer__copyright">© 2014-2021 АО «Корпорация МСП»</div>
+							</div>
+							<div class="ie-footer__col-2">
+								<ul class="ie-footer__tels">
+									<li> <a href="tel:+78003501010">+7 800 350-10-10</a></li>
+									<li> <a href="#">+7 495 698-98-00</a></li>
+								</ul>
+								<p>Москва, Славянская площадь, д.4, стр.1</p>
+							</div>
 						</div>
 					</div>
 				</div>

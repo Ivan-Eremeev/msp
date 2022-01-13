@@ -8,6 +8,17 @@
 .ie-menu__list a:after {
   background-color: #E6D6C7;
 }
+@media (max-width: 769px) {
+  .ie-menu__nav {
+    background-color: #E6D6C7;
+  }
+  .ie-menu__list a {
+    color: #191919;
+  }
+  .ie-menu__close:after, .ie-menu__close:before {
+    background-color: #191919;
+  }
+}
 
 .ie-header__list a {
   color: #191919;
@@ -18,6 +29,14 @@
 .ie-header__list a:after {
   background-color: #E6D6C7;
   border: 2px solid #191919;
+}
+.ie-header__search svg {
+  stroke: #E6D6C7;
+}
+@media (max-width: 769px) {
+  .ie-header__search svg {
+    stroke: #191919;
+  }
 }
 
 .ie-title {
@@ -160,4 +179,11 @@
 }
 .ie-footer__tels a:hover {
   color: #006EF3;
+}
+
+.hamburger-inner {
+  background: #E6D6C7 !important;
+}
+.hamburger-inner:before, .hamburger-inner:after {
+  background: #E6D6C7 !important;
 }

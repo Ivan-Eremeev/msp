@@ -7,6 +7,8 @@
   }
   &__col {
     @include col(4);
+    @include col-md(6);
+    @include col-sm(12);
   }
   &__item {
     display: block;
@@ -56,6 +58,38 @@
       width: 80%;
       padding: 14px 15px 16px 33px;
       border-radius: 60px 60px 60px 0;
+    }
+  }
+  @media (max-width: $break_xl) {
+    &__date {
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    &__hint {
+        padding: 12px 10px 15px 20px;
+        &:last-child {
+          padding: 5px 10px 7px 20px;
+        }
+    }
+    &__col {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    margin-bottom: 40px;
+    &__col {
+      margin-bottom: 20px;
+    }
+    &__item {
+      &--2 {
+        padding: 30px 20px;
+      }
+      &--3 {
+        padding: 0 20px;
+      }
     }
   }
 }

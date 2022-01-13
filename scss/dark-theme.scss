@@ -1,3 +1,5 @@
+@import 'mixingrid/mixingrid';
+
 // Цвета
 $white: #E6D6C7;
 $black: #191919;
@@ -17,6 +19,21 @@ $red: #FF6766;
       }
     }
   }
+  @media (max-width: $break_sm) {
+    &__nav {
+      background-color: $white;
+    }
+    &__list {
+      a {
+        color: $black;
+      }
+    }
+    &__close {
+      &:after, &:before {
+        background-color: $black;
+      }
+    }
+  }
 }
 
 .ie-header {
@@ -29,6 +46,18 @@ $red: #FF6766;
       &:after {
         background-color: $white;
         border: 2px solid $black;
+      }
+    }
+  }
+  &__search {
+    svg {
+      stroke: $white;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__search {
+      svg {
+        stroke: $black;
       }
     }
   }
@@ -191,5 +220,12 @@ $red: #FF6766;
         color: $blue;
       }
     }
+  }
+}
+
+.hamburger-inner {
+  background: $white !important;
+  &:before, &:after {
+    background: $white !important;
   }
 }

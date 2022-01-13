@@ -2,6 +2,7 @@
   font-family: "PtrootUI", sans-serif;
   line-height: 1.2;
   margin-bottom: 200px;
+  padding: 0 30px;
   &__container {
     max-width: 520px;
     margin-left: auto;
@@ -63,6 +64,25 @@
       font-weight: 500;
       text-decoration: none;
       transition: 0.2s;
+    }
+  }
+  @media (max-width: $break_xl) {
+    margin-bottom: 120px;
+    &__item {
+      margin-bottom: 50px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    padding: 0 15px;
+    margin-bottom: 60px;
+    &__item {
+      margin-bottom: 30px;
+    }
+    &__name {
+      margin-bottom: 20px;
+    }
+    &__title {
+      margin-bottom: 20px;
     }
   }
 }
