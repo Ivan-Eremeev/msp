@@ -19,7 +19,6 @@
     align-items: center;
     height: 100%;
     border-radius: 40px;
-    overflow: hidden;
     text-decoration: none;
     cursor: pointer;
     user-select: none;
@@ -195,6 +194,7 @@
       opacity: 1;
       transform: translate(0,0);
       visibility: visible;
+      z-index: 3;
     }
   }
   &__backing {
@@ -214,6 +214,16 @@
     user-select: none;
     border-radius: 25px;
     transition: 0.2s;
+  }
+  @media (min-width: $break_sm + 1) {
+    &__item {
+      position: relative;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.1);
+        z-index: 2;
+      }
+    }
   }
   @media (max-width: $break_xl) {
     margin-bottom: 20px;

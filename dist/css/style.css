@@ -158,8 +158,9 @@ html {
 }
 
 .ie-title {
+  padding: 0 30px;
   font-family: "PtrootUI", sans-serif;
-  font-size: 83px;
+  font-size: 82px;
   font-weight: normal;
   line-height: 1.5;
   text-align: center;
@@ -176,6 +177,7 @@ html {
 }
 @media (max-width: 500px) {
   .ie-title {
+    padding: 0 15px;
     font-size: 30px;
   }
 }
@@ -211,8 +213,25 @@ img {
   max-width: 100%;
 }
 
-#lightTheme {
-  display: none;
+.parallax__layer {
+  position: absolute;
+  z-index: 12;
+}
+.parallax__layer--1 {
+  right: 10%;
+}
+.parallax__layer--2 {
+  right: 15%;
+}
+@media (max-width: 1450px) {
+  .parallax__layer {
+    max-width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .parallax__layer {
+    max-width: 100px;
+  }
 }
 
 /* /settings */
@@ -1030,7 +1049,6 @@ img {
   align-items: center;
   height: 100%;
   border-radius: 40px;
-  overflow: hidden;
   text-decoration: none;
   cursor: pointer;
   -webkit-user-select: none;
@@ -1251,6 +1269,7 @@ img {
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
   visibility: visible;
+  z-index: 3;
 }
 .ie-slider__backing {
   padding: 14px 15px 8px 33px;
@@ -1276,6 +1295,20 @@ img {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+}
+@media (min-width: 770px) {
+  .ie-slider__item {
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .ie-slider__item:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+  }
 }
 @media (max-width: 1400px) {
   .ie-slider {
