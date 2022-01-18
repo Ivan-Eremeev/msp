@@ -35,8 +35,14 @@ block content
 							#hint.ie-slider__drop 
 								.ie-slider__backing Привет! Рассказать подробнее о Сервисе 360°?
 								.ie-slider__btns 
-									a(href="#").ie-slider__btn конечно! &#8599;
-									.js-drop-close.ie-slider__btn(data-drop="hint") посмотрю позже &#8599;
+									a(href="#").ie-slider__btn конечно!
+										svg(width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M1 16L16 1" stroke-width="2" stroke-miterlimit="10")
+											path(d="M3.19727 1H16.0002V13.8029" stroke-width="2" stroke-miterlimit="10")
+									.js-drop-close.ie-slider__btn(data-drop="hint") посмотрю позже
+										svg(width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg")
+											path(d="M1 16L16 1" stroke-width="2" stroke-miterlimit="10")
+											path(d="M3.19727 1H16.0002V13.8029" stroke-width="2" stroke-miterlimit="10")
 						.swiper-slide.swiper-slide--3
 							a(href="#").ie-slider__item.ie-slider__item--3
 								.ie-slider__title полки
@@ -51,7 +57,7 @@ block content
 									li продажи
 									li найм сотрудников
 									li критическое мышление
-								.ie-slider__sticker выбрать мероприятие &#8599;
+								.ie-slider__sticker выбрать мероприятие 
 								.ie-slider__ps получите знания по теме бесплатно и примените их в работе
 						.swiper-slide.swiper-slide--3
 							a(href="#").ie-slider__item.ie-slider__item--4
@@ -82,7 +88,7 @@ block content
 					.ie-slider__pagination.swiper-pagination
 			//	/ie-slider
 
-			.parallax__layer.parallax__layer--1(data-speed="50")
+			.parallax__layer.parallax__layer--1(data-speed="20")
 				img(src="img/smile_2.webp", alt="")
 
 			// ie-slider
@@ -123,7 +129,7 @@ block content
 									img(src="img/servise360.webp", alt="")
 			//	/ie-slider
 
-			.parallax__layer.parallax__layer--2(data-speed="30")
+			.parallax__layer.parallax__layer--2(data-speed="20")
 				img(src="img/smile_3.webp", alt="")
 
 			// ie-news
@@ -174,7 +180,10 @@ block content
 							.ie-newscenter__date 11 марта 2021
 							a(href="#").ie-newscenter__link подробнее
 					.ie-newscenter__more 
-						a(href="#") все новости &#8599;
+						a(href="#") все новости
+							svg(width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg")
+								path(d="M1 16L16 1" stroke-width="2" stroke-miterlimit="10")
+								path(d="M3.19727 1H16.0002V13.8029" stroke-width="2" stroke-miterlimit="10")
 			//	/ie-newscenter
 			
 		include blocks/footer.pug

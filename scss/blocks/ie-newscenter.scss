@@ -58,12 +58,21 @@
     text-align: center;
     padding-top: 20px;
     a {
+      display: inline-flex;
+      align-items: center;
       padding: 1px 10px 4px;
       border-radius: 25px;
       font-size: 18px;
       font-weight: 500;
       text-decoration: none;
       transition: 0.2s;
+      white-space: nowrap;
+      svg {
+        width: 8px;
+        margin-left: 5px;
+        margin-top: 3px;
+        transition: 0.2s;
+      }
     }
   }
   @media (max-width: $break_xl) {

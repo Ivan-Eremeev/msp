@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+	// Брэйкпоинты js
+	var breakXl = 1400,
+		breakLg = 1200,
+		breakMd = 1025,
+		breakSm = 769,
+		breakXs = 500;
+
 	// Мобильное меню
 	function myMenu(menu) {
 		if (menu.length) {
@@ -119,6 +126,7 @@ $(document).ready(function () {
 	}
 	switchTheme();
 
+	// Параллакс при скролле
 	$(function () {
 		window.addEventListener("scroll", function (event) {
 

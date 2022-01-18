@@ -207,13 +207,22 @@
     margin-left: -20px;
   }
   &__btn {
+    display: flex;
+    align-items: center;
     padding: 1px 10px 3px;
     margin-left: 20px;
     text-decoration: none;
+    white-space: nowrap;
     cursor: pointer;
     user-select: none;
     border-radius: 25px;
     transition: 0.2s;
+    svg {
+      width: 8px;
+      margin-left: 5px;
+      margin-top: 2px;
+      transition: 0.2s;
+    }
   }
   @media (min-width: $break_sm + 1) {
     &__item {
@@ -284,6 +293,18 @@
       font-size: 16px;
     }
   }
+  @media (max-width: $break_md) {
+    &__drop {
+      max-width: 250px;
+      bottom: 20px;
+    }
+    &__btns {
+      margin-left: -10px;
+    }
+    &__btn {
+      margin-left: 10px;
+    }
+  }
   @media (max-width: $break_xs) {
     &__bottom {
       padding: 10px 15px;
@@ -307,6 +328,19 @@
         .ie-slider__img {
           width: 60%;
         }
+      }
+    }
+    .swiper-slide {
+      &--2 {
+        width: 300px;
+      }
+    }
+    .parallax__layer {
+      &--1 {
+        right: 20px;
+      }
+      &--2 {
+        right: 20px;
       }
     }
   }

@@ -11,15 +11,15 @@
     margin-left: -80px;
   }
   &__link {
-    display: flex;
-    align-items: flex-end;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
     margin-left: 80px;
     padding: 10px 0;
     transition: 0.2s;
-    span {
-      font-size: 30px;
-      margin-left: 10px;
+    svg {
+      margin-top: 7px;
+      margin-left: 5px;
     }
   }
   @media (max-width: $break_xl) {
@@ -30,6 +30,9 @@
     }
     &__link {
       margin-left: 30px;
+      svg {
+        width: 10px;
+      }
     }
   }
   @media (max-width: $break_xs) {

@@ -7,10 +7,7 @@ $blue: #006EF3;
 $red: #FF6766;
 
 .light-theme {
-  .ie-body {
-    background-color: $black;
-  }
-
+  background-color: $black;
   .ie-menu {
     &__list {
       a {
@@ -128,9 +125,15 @@ $red: #FF6766;
       color: $white;
       border: 2px solid $white;
       background-color: $black;
+      svg {
+        stroke: $white;
+      }
       &:hover {
         background-color: $white;
         color: $black;
+        svg {
+          stroke: $black;
+        }
       }
     }
   }
@@ -176,9 +179,15 @@ $red: #FF6766;
       a {
         border: 2px solid $white;
         color: $white;
+        svg {
+          stroke: $white;
+        }
         &:hover {
           background-color: $white;
           color: $black;
+          svg {
+            stroke: $black;
+          }
         }
       }
     }
@@ -187,8 +196,14 @@ $red: #FF6766;
   .ie-social {
     &__link {
       color: $white;
+      svg {
+        stroke: $white;
+      }
       &:hover {
         color: $blue;
+        svg {
+          stroke: $blue
+        }
       }
     }
   }
